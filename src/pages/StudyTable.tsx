@@ -919,8 +919,6 @@ function AskBotView({ chapterName, subjectId, chapterNumber: _chapterNumber, dif
   const [isHoldingMic, setIsHoldingMic] = useState(false);
   const [showWave, setShowWave] = useState(false);
   const [showClickWave, setShowClickWave] = useState(false);
-  const [audioLevel, setAudioLevel] = useState(0);
-  const [barHeights, setBarHeights] = useState<number[]>(new Array(13).fill(4));
   const analyserRef = useRef<AnalyserNode | null>(null);
   const animFrameRef = useRef<number | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
@@ -1375,9 +1373,6 @@ function PodcastsView({ chapterName, subjectId, chapterNumber, persona, autoPlay
   }, [selectedTrack, subjectId, chapterNumber, persona]);
   const audioRef = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
-  const [isHoldingMic, setIsHoldingMic] = useState(false);
-  const [showWave, setShowWave] = useState(false);
-  const [showClickWave, setShowClickWave] = useState(false);
   const [transcript, setTranscript] = useState<string | null>(null);
   const [showTranscript, setShowTranscript] = useState(true);
   const transcriptRef = useRef<HTMLDivElement>(null);

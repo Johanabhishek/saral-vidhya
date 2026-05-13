@@ -1,0 +1,7 @@
+name = "saral-vidhya"
+pages_build_output_dir = "dist"
+
+[vars]
+# You can add environment variables here, but for sensitive keys like
+# VITE_GOOGLE_API_KEY, it's better to set them in the Cloudflare Dashboard.
+# VITE_GOOGLE_API_KEY = "your-api-key"
